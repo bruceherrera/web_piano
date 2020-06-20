@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<script src="main.js"></script>
+<style>
+    body {background-color: teal;}
+    kbd {
+        margin: -4px;
+        background: white;
+        padding: 280px 25px 25px 25px;
+        display: inline-block;
+        border: 2px solid black;
+
+    }
+
+    .container {
+        right: 50%;
+        bottom: 65%;
+        transform: translate(50%,50%);
+        position: absolute;
+    }
+
+    .black-keys kbd{
+        background: black;
+        color: white;
+        padding: 170px 20px 15px 15px;
+        margin: 8px;
+        position: relative;
+        bottom: -210px;
+        left: 25px;
+        z-index: 1;
+    }
+
+    .white-keys kbd{
+        background: white;
+    }
+
+</style>
+<head>
+    <meta charset="utf-8">
+    <title>Virtual Piano</title>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="black-keys">
+        <kbd>W</kbd>
+        <kbd>E</kbd>
+        <kbd>T</kbd>
+        <kbd>Y</kbd>
+        <kbd>U</kbd>
+    </div>
+
+    <div class="white-keys">
+        <kbd>A</kbd>
+        <kbd>S</kbd>
+        <kbd>D</kbd>
+        <kbd>F</kbd>
+        <kbd>G</kbd>
+        <kbd>H</kbd>
+        <kbd>J</kbd>
+    </div>
+</div>
+</body>
+</html>
